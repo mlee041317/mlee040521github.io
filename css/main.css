@@ -2,57 +2,49 @@
 body {
     display: grid;
     grid-template-columns: 12% auto auto 12%;
-    grid-template-rows: 12% auto auto 12%;
+    grid-template-rows: 12% auto auto auto 12%;
     height: 100vh;
-    background-color: rgb(229,222,208);
-    margin: auto;
+    margin: 0;
     font-family: 'Shippori Mincho', serif;
 }
 
-ul {
-    list-style-type: none;
-}
 
-
-/* .main {
-    grid-row: 1;
-    grid-column: 2 / span 2;
-} */
-
-.header-picture {
-    height: 50vh;
-    width: 100vw;
-    border: solid;
-    margin: auto;
-}
-
-header {
-    grid-row: 1;
-    grid-column: 2 / span 2;
-    margin: 30px;
-    padding: auto;
+.nav-wrapper {
+    background-color: #1b3752;
 }
 
 .about {
-    margin: 30px;
-    padding: auto;
     grid-row: 2;
     grid-column: 2 / span 2;
+    display: flex;
 }
-.projects {
-    margin: 30px;
+
+.about-me {
     grid-row: 3;
     grid-column: 2 / span 2;
+    text-align: center;
 }
 
-.skills {
-    margin: 30px;
-    grid-row: 4;
-    grid-column: 2 / span 2;
+.about img {
+    height: 300px;
+    width: 500px;
+    margin: 10px; 
 }
 
-/* .contact {
+.projects {
+    text-align: center;
     grid-row: 4;
     grid-column: 2 / span 2;
-} */
+    border: solid;
+    margin: 25px;
+}
+
+.projects img {
+    margin: 10px;
+}
+
+#contact {
+    grid-row: 5;
+    grid-column: 2 / span 2;
+}
 

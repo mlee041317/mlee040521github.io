@@ -5,55 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
     <script src="./app/app.js" defer></script>
     <title>You look lost, come follow me.</title>
 </head>
 
 <body>
-    <!-- <nav class="navigation">
-        <ul>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
-        </ul>
-    </nav> -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Michelle Lee</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="https://git.generalassemb.ly/mlee041317">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/mlee041317">LinkedIn</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <img class="header-picture"
-        src="https://images.unsplash.com/photo-1482062364825-616fd23b8fc1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-
-
-    <header class="header">
-        <h1>Michelle / Lee</h1>
-        <ul>
-            <li><a href="/">LinkedIn</a></li>
-            <li><a href="/">GitHub</a></li>
-        </ul>
-    </header>
 
     <div class="about">
-        <h2>About Me</h2>
-        <p>I am a curious, versatile software developer that thoroughly enjoys solving problems. I am always looking for
-            ways to grow my knowledge and skills. I am passionate about tackling challenges and providing an honest,
-            strategic perspective to any team I work with.</p>
+        <img class="one"
+            src="https://images.unsplash.com/photo-1517503733723-8ea1cf616798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="">
+        <img class="two"
+            src="https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1093&q=80"
+            alt="">
+    </div>
+
+
+    <div class="about-me">
+        <p>I am a curious, versatile, full stack Software Engineer that thoroughly enjoys solving problems. I am always
+            looking for ways to grow my knowledge and skills. I am passionate about tackling challenges and providing an
+            honest, strategic perspective to any team I work with.</p>
+        <br>
+        <p>Technical Skills:</p>
+        <p>HTML, CSS, Javascript, Python, MongoDB, MongooseJS, jQuery, NodeJS, ExpressJS</p>
 
     </div>
+
 
     <div class="projects">
-        <h2>Projects</h2>
+        <h3>Projects</h3>
+        <img class="project-one"
+            src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="" width=200 height=150>
+        <img class="project-two"
+            src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="" width=200 height=150>
+        <img class="project-three"
+            src="https://images.unsplash.com/photo-1527443195645-1133f7f28990?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+            alt="" width=200 height=150>
     </div>
 
-    <div class="skills">
-        <h2>Skills</h2>
+    <!-- <div class="skills">
+        <h3>Skills</h3>
         <p>Technical Languages:</p>
         <p>HTML, CSS, Javascript, Grid, jQuery, React, MongoDB, NodeJS, ExpressJS, Mongoose, Python</p>
 
-        <h2>Recommendations</h2>
+        <h3>Recommendations</h3>
         <p>A person who thinks all the time has nothing to think about except thoughts. So, he loses touch with reality,
             and lives in a world of illusions.
         </p>
@@ -64,13 +83,25 @@
         <p>Time to wake up, what is reality? Obviously, no one can say because it isn't words. It isn't material, that's
             just an idea. Reality is the point in which cannot be explained in words.
         </p>
+    </div> -->
+
+    <div id="contact">
+        <form action="action_page.php">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email">
+            <br>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
     </div>
 
-    <!-- <footer class="footer">
-        <div class="contact">
-            <h1>Contact</h1>
-        </div>
-    </footer> -->
 
 
 </body>

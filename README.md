@@ -1,12 +1,12 @@
 # Portfolio
-Michelle's portfolio showcases a clean, minimalistic page, with an about me section, technical skills, projects, contact form, and a fully functioning navigation.
+Michelle's portfolio showcases a clean, minimalistic page, with an about me section, projects, contact form, a fully functioning navigation, and footer.
 
 ## Technologies Used
 * HTML
 * CSS
-* Javascript
 
 ## Existing Features
 * Working Navigation
-* Contact Form
+* Working Project Links
+* Working Footer
 

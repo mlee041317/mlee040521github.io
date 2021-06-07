@@ -2,49 +2,62 @@
 body {
     display: grid;
     grid-template-columns: 12% auto auto 12%;
-    grid-template-rows: 12% auto auto auto 12%;
+    grid-template-rows: 12% auto auto auto auto 12%;
     height: 100vh;
     margin: 0;
-    font-family: 'Shippori Mincho', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ededed;
 }
 
-
 .nav-wrapper {
-    background-color: #1b3752;
+    background-color: white;
+}
+
+.nav-wrapper a {
+    color: black;
 }
 
 .about {
     grid-row: 2;
     grid-column: 2 / span 2;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .about-me {
     grid-row: 3;
     grid-column: 2 / span 2;
-    text-align: center;
+    text-align: left;
 }
 
 .about img {
     height: 300px;
     width: 500px;
     margin: 10px; 
+    filter: grayscale(100%);
 }
 
 .projects {
     text-align: center;
     grid-row: 4;
     grid-column: 2 / span 2;
-    border: solid;
+    /* border: solid #1b3752; */
     margin: 25px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-.projects img {
+.project {
     margin: 10px;
+    width: 20%;
 }
 
-#contact {
+
+.page-footer {
+    background-color: white;
     grid-row: 5;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 6;
 }
 
